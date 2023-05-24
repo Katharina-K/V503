@@ -1,61 +1,152 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\subsection{Ünerprüfen der Messwerte im Rahmen der Messgenauigkeit}
+\subsection{Überprüfen der Messwerte im Rahmen der Messgenauigkeit}
 In \ref{tab:Messwerte} sind die Messwerte für diesen Versuch aufgeführt. Dabei handelt es sich um die Spannung $U$, 
 die Steigzeit $t_{\text{auf}}$, die Fallzeit $t_{\text{ab}}$ und die Temperatur $T$. Da für jeden Öltropfen drei Steig- als auch 
 Fallzeiten gemessen wurden, wurde der Mittelwert aus diesen berechnet. Andernfalls entspricht der Mittelwert dem jeweiligen 
 Einzelmesswert.
 
+\begin{landscape}
 \begin{table}[!ht]
     \centering
-    \begin{tabular}{c c c c c c c c c c c}
+    \begin{tabular}{c c c c c c c c c c c c}
         \toprule
-        Spannung U [V] &   V\_0 & Steigzeit 1 t\_(1,auf) [s] & Steigzeit 2 t\_(2,auf) [s] & Steigzeit 3 t\_(3,auf) [s] & Fallzeit 1 t\_(1,ab) & Fallzeit 2 t\_(2,ab) & Fallzeit 3 t\_(3,ab) & Fallzeit Mittel \textbackslash overline\{t\_(ab) [s]\}Steigzeit Mittel \textbackslash overline\{t\_(auf) [s]\} & Unnamed: 9 &  Temperatur T [°C] \\
+		Tröpf- & Spannung & $t_0$ & Steigzeit 1 & Steigzeit 2 & Steigzeit 3 & Fallzeit 1 & Fallzeit 2 & Fallzeit 3 & Steigzeit & Fallzeit & Temperatur\\
+        chen & & & & & & & & & Mittel & Mittel& \\
+         & $U$ [\si{\volt}]&  & $t_{1,\text{auf}}$ [\si{\second}] & $t_{2,\text{auf}}$ [\si{\second}]& $t_{3,\text{auf}}$ [\si{\second}] & $t_{1,\text{ab}}$ [\si{\second}] & $t_{2,\text{ab}}$ [\si{\second}] & $t_{2,\text{ab}}$ [\si{\second}] & $\overline{t_{\text{auf}}}$ [\si{\second}] & $\overline{t_{\text{ab}}}$ [\si{\second}] & $T$ [\si{\celsius}]\\
         \midrule
-                    201 & 21,11 &                      4,76 &                      4,23 &                      4,47 &                3,13 &                3,15 &                3,22 &                                               4,49 &       3,17 &                 22 \\
-                    201 & 24,52 &                      6,84 &                      6,91 &                       5,6 &                4,54 &                4,38 &                4,13 &                                               6,45 &       4,35 &                 22 \\
-                    201 & 37,21 &                       4,7 &                      3,13 &                      3,33 &                2,66 &                2,61 &                2,59 &                                               3,72 &       2,62 &                 22 \\
-                    201 & 32,45 &                      3,24 &                      2,62 &                      2,72 &                2,59 &                 2,2 &                 2,5 &                                               2,86 &       2,43 &                 22 \\
-                    201 & 18,24 &                      4,72 &                      5,56 &                      5,77 &                 3,2 &                3,67 &                3,52 &                                               5,35 &       3,46 &                 22 \\
-                    201 & 26,39 &                      3,07 &                      3,27 &                      3,16 &                2,52 &                2,72 &                 2,7 &                                               3,17 &       2,65 &                 22 \\
-                    201 & 29,28 &                      2,41 &                      2,44 &                      2,54 &                2,39 &                 2,4 &                2,38 &                                               2,46 &       2,39 &                 22 \\
-                    201 & 45,39 &                       2,7 &                      2,94 &                      2,86 &                2,62 &                2,58 &                2,43 &                                               2,83 &       2,54 &                 22 \\
-                    230 & 22,45 &                       3,6 &                      3,72 &                      4,09 &                3,87 &                3,78 &                 3,7 &                                               3,80 &       3,78 &                 21 \\
-                    230 & 31,59 &                      3,66 &                      2,91 &                      3,01 &                2,52 &                2,71 &                2,58 &                                               3,19 &       2,60 &                 21 \\
-                    230 & 19,01 &                      2,93 &                      2,86 &                      2,91 &                2,05 &                2,41 &                2,26 &                                               2,90 &       2,24 &                 21 \\
-                    230 & 53,22 &                      3,68 &                      3,61 &                      3,72 &                2,83 &                3,29 &                3,24 &                                               3,67 &       3,12 &                 21 \\
-                    230 & 29,45 &                      6,23 &                      7,02 &                      7,49 &                5,58 &                6,32 &                5,47 &                                               6,91 &       5,79 &                 21 \\
-                    230 & 54,16 &                      2,57 &                      2,77 &                      2,93 &                 2,6 &                2,88 &                2,61 &                                               2,76 &       2,70 &                 21 \\
-                    230 & 24,43 &                      5,03 &                      5,02 &                      5,31 &                 3,7 &                3,58 &                3,58 &                                               5,12 &       3,62 &                 21 \\
-                    230 & 19,17 &                      2,97 &                      3,15 &                      3,17 &                3,06 &                2,69 &                2,82 &                                               3,10 &       2,86 &                 21 \\
-                    230 & 29,66 &                      3,82 &                      3,66 &                      3,82 &                2,89 &                2,58 &                2,97 &                                               3,77 &       2,81 &                 21 \\
-                    230 & 29,08 &                       2,5 &                      2,48 &                      2,43 &                1,97 &                2,24 &                 2,4 &                                               2,47 &       2,20 &                 21 \\
-                    230 & 29,05 &                      2,86 &                      3,51 &                      2,96 &                2,37 &                2,62 &                2,96 &                                               3,11 &       2,65 &                 21 \\
-                    230 & 32,07 &                      2,21 &                      2,33 &                       2,4 &                1,95 &                2,04 &                2,14 &                                               2,31 &       2,04 &                 21 \\
-                    230 & 50,09 &                      2,53 &                      2,68 &                      2,75 &                2,11 &                 2,1 &                2,25 &                                               2,65 &       2,15 &                 21 \\
-                    230 & 42,67 &                      2,17 &                      2,12 &                      2,05 &                1,99 &                2,38 &                2,28 &                                               2,11 &       2,22 &                 21 \\
+            1&        201 & 21,11 &                      4,76 &                      4,23 &                      4,47 &                3,13 &                3,15 &                3,22 &                                               4,49 &       3,17 &                 22 \\
+            2&        201 & 24,52 &                      6,84 &                      6,91 &                       5,6 &                4,54 &                4,38 &                4,13 &                                               6,45 &       4,35 &                 22 \\
+            3&        201 & 37,21 &                       4,7 &                      3,13 &                      3,33 &                2,66 &                2,61 &                2,59 &                                               3,72 &       2,62 &                 22 \\
+            4&        201 & 32,45 &                      3,24 &                      2,62 &                      2,72 &                2,59 &                 2,2 &                 2,5 &                                               2,86 &       2,43 &                 22 \\
+            5&        201 & 18,24 &                      4,72 &                      5,56 &                      5,77 &                 3,2 &                3,67 &                3,52 &                                               5,35 &       3,46 &                 22 \\
+            6&        201 & 26,39 &                      3,07 &                      3,27 &                      3,16 &                2,52 &                2,72 &                 2,7 &                                               3,17 &       2,65 &                 22 \\
+            7&        201 & 29,28 &                      2,41 &                      2,44 &                      2,54 &                2,39 &                 2,4 &                2,38 &                                               2,46 &       2,39 &                 22 \\
+            8&        201 & 45,39 &                       2,7 &                      2,94 &                      2,86 &                2,62 &                2,58 &                2,43 &                                               2,83 &       2,54 &                 22 \\
+            9&        230 & 22,45 &                       3,6 &                      3,72 &                      4,09 &                3,87 &                3,78 &                 3,7 &                                               3,80 &       3,78 &                 21 \\
+            10&        230 & 31,59 &                      3,66 &                      2,91 &                      3,01 &                2,52 &                2,71 &                2,58 &                                               3,19 &       2,60 &                 21 \\
+            11&        230 & 19,01 &                      2,93 &                      2,86 &                      2,91 &                2,05 &                2,41 &                2,26 &                                               2,90 &       2,24 &                 21 \\
+            12&        230 & 53,22 &                      3,68 &                      3,61 &                      3,72 &                2,83 &                3,29 &                3,24 &                                               3,67 &       3,12 &                 21 \\
+            13&        230 & 29,45 &                      6,23 &                      7,02 &                      7,49 &                5,58 &                6,32 &                5,47 &                                               6,91 &       5,79 &                 21 \\
+            14&        230 & 54,16 &                      2,57 &                      2,77 &                      2,93 &                 2,6 &                2,88 &                2,61 &                                               2,76 &       2,70 &                 21 \\
+            15&        230 & 24,43 &                      5,03 &                      5,02 &                      5,31 &                 3,7 &                3,58 &                3,58 &                                               5,12 &       3,62 &                 21 \\
+            16&        230 & 19,17 &                      2,97 &                      3,15 &                      3,17 &                3,06 &                2,69 &                2,82 &                                               3,10 &       2,86 &                 21 \\
+            17&        230 & 29,66 &                      3,82 &                      3,66 &                      3,82 &                2,89 &                2,58 &                2,97 &                                               3,77 &       2,81 &                 21 \\
+            18&        230 & 29,08 &                       2,5 &                      2,48 &                      2,43 &                1,97 &                2,24 &                 2,4 &                                               2,47 &       2,20 &                 21 \\
+            19&        230 & 29,05 &                      2,86 &                      3,51 &                      2,96 &                2,37 &                2,62 &                2,96 &                                               3,11 &       2,65 &                 21 \\
+            20&        230 & 32,07 &                      2,21 &                      2,33 &                       2,4 &                1,95 &                2,04 &                2,14 &                                               2,31 &       2,04 &                 21 \\
+            21&        230 & 50,09 &                      2,53 &                      2,68 &                      2,75 &                2,11 &                 2,1 &                2,25 &                                               2,65 &       2,15 &                 21 \\
+            22&        230 & 42,67 &                      2,17 &                      2,12 &                      2,05 &                1,99 &                2,38 &                2,28 &                                               2,11 &       2,22 &                 21 \\
         \bottomrule
         \end{tabular}
         \caption{Die aufgenommenen Messwerte.}
         \label{tab:Messwerte}
     \end{table}
+\end{landscape}
 
-
-In \ref{tab:} sind die Ergebnisse der Messungen aufgeführt. Aus den Zeiten $t_{\text{auf}}$ und $t_{\text{ab}}$ 
+In \ref{tab:Tabelle2} sind die Ergebnisse der Messungen aufgeführt. Aus den Zeiten $t_{\text{auf}}$ und $t_{\text{ab}}$ 
 wurde die entsprechende Geschwindigkeit $v_{\text{auf}}$ und $v_{\text{ab}}$ über die verwendete Messstrecke $s = \SI{0.5}{\mm}$
 mit $v=\frac{s}{t}$ berechnet. Die Luftviskosität $\eta_{L}$ wurde gemäß Abbildung 3 in \cite{1} verwendet. Zudem wurde noch die  
 Differenz der Geschwindigkeiten $v_{\text{ab}} - v_{\text{auf}}$ bestimmt.
 
-Tabelle einfügen vauf, vab, vab-vauf, v0, nL
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{c c c c c c}
+        \toprule
+        Tröpfchen &Steig- & Fall- & Differenz- & $v_0$ & Luftviskosität\\
+         & geschwindigkeit & geschwindigkeit & geschwindigkeit & & \\
+         & $v_{\text{auf}}$ [\si{\milli\meter\per\second}] & $v_{\text{ab}}$ [\si{\milli\meter\per\second}] & $v_{\text{ab}} - v_{\text{auf}}$ [\si{\milli\meter\per\second}] &  & $\eta_{L}$ [\si{\micro\newton\second\per\square\meter}]\\
+        \midrule
+         1&   0,11 &                  0,16 &                      0,05 &  0,02 &          18,34  \\
+         2&   0,08 &                  0,11 &                      0,04 &  0,02 &          18,34  \\
+         3&   0,13 &                  0,19 &                      0,06 &  0,01 &          18,34  \\
+         4&   0,17 &                  0,21 &                      0,03 &  0,02 &          18,34  \\
+         5&   0,09 &                  0,14 &                      0,05 &  0,03 &          18,34  \\
+         6&   0,16 &                  0,19 &                      0,03 &  0,02 &          18,34  \\
+         7&   0,20 &                  0,21 &                      0,01 &  0,02 &          18,34  \\
+         8&   0,18 &                  0,20 &                      0,02 &  0,01 &          18,34  \\
+         9&   0,13 &                  0,13 &                      0,00 &  0,02 &          18,28  \\
+         10&   0,16 &                  0,19 &                      0,04 &  0,02 &          18,28  \\
+         11&   0,17 &                  0,22 &                      0,05 &  0,03 &          18,28  \\
+         12&   0,14 &                  0,16 &                      0,02 &  0,01 &          18,28  \\
+         13&   0,07 &                  0,09 &                      0,01 &  0,02 &          18,28  \\
+         14&   0,18 &                  0,19 &                      0,00 &  0,01 &          18,28  \\
+         15&   0,10 &                  0,14 &                      0,04 &  0,02 &          18,28  \\
+         16&  0,16 &                  0,17 &                      0,01 &  0,03 &          18,28  \\
+         17&   0,13 &                  0,18 &                      0,05 &  0,02 &          18,28  \\
+         18&   0,20 &                  0,23 &                      0,02 &  0,02 &          18,28  \\
+         19&   0,16 &                  0,19 &                      0,03 &  0,02 &          18,28  \\
+         20&   0,22 &                  0,25 &                      0,03 &  0,02 &          18,28  \\
+         21&   0,19 &                  0,23 &                      0,04 &  0,01 &          18,28  \\
+         22&   0,24 &                  0,23 &                     -0,01 &  0,01 &          18,28  \\
+        \bottomrule
+    \end{tabular}
+    \caption{Aus den Messwerten berechnete Steig- und Fallgeschwindigkeiten, deren Differenz, 
+	sowie $v_0$ und unkorrigierte Viskosität der Luft.}
+    \label{tab:Tabelle2}
+\end{table}
 
 Um sich auf einen Bereich einzuschränken, werden alle Werte, die die Relation 
 \begin{equation*}
     0.5\leq \frac{2v_0}{\bar{v}_{\text{auf}}-\bar{v}_{\text{ab}}}\leq 1.5
 \end{equation*}
-erfüllen, als auswertbar angenommen.
+erfüllen, als auswertbar angenommen. Die Ergebnisse zur Gültigkeit der Öltröpfchen ist in \autoref{tab:Gültigkeitsbereich} 
+zu finden.
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{c c c c c c}
+        \toprule
+        Tröpfchen & Differenzgeschwindigkeit  & $v_0$   & $\frac{2v_0}{\bar{v}_{\text{ab}}-\bar{v}_{\text{auf}}}$ &    Prüfe Gültigkeitsbereich \\
+        \midrule
+                    1&        0,05 &  0,02 &                                               1,02 &       im Gültigkeitsbereich \\
+                    2&        0,04 &  0,02 &                                               1,09 &       im Gültigkeitsbereich \\
+                    3&        0,06 &  0,01 &                                               0,48 & nicht im Gültigkeitsbereich \\
+                    4&        0,03 &  0,02 &                                               1,00 &       im Gültigkeitsbereich \\
+                    5&        0,05 &  0,03 &                                               1,07 &       im Gültigkeitsbereich \\
+                    6&        0,03 &  0,02 &                                               1,22 &       im Gültigkeitsbereich \\
+                    7&        0,01 &  0,02 &                                               5,74 & nicht im Gültigkeitsbereich \\
+                    8&        0,02 &  0,01 &                                               1,09 &       im Gültigkeitsbereich \\
+                    9&        0,00 &  0,02 &                                              63,98 & nicht im Gültigkeitsbereich \\
+                    10&        0,04 &  0,02 &                                               0,89 &       im Gültigkeitsbereich \\
+                    11&        0,05 &  0,03 &                                               1,04 &       im Gültigkeitsbereich \\
+                    12&        0,02 &  0,01 &                                               0,78 &       im Gültigkeitsbereich \\
+                    13&        0,01 &  0,02 &                                               2,43 & nicht im Gültigkeitsbereich \\
+                    14&        0,00 &  0,01 &                                               4,59 & nicht im Gültigkeitsbereich \\
+                    15&        0,04 &  0,02 &                                               1,01 &       im Gültigkeitsbereich \\
+                    16&        0,01 &  0,03 &                                               3,85 & nicht im Gültigkeitsbereich \\
+                    17&        0,05 &  0,02 &                                               0,74 &       im Gültigkeitsbereich \\
+                    18&        0,02 &  0,02 &                                               1,38 &       im Gültigkeitsbereich \\
+                    19&        0,03 &  0,02 &                                               1,23 &       im Gültigkeitsbereich \\
+                    20&        0,03 &  0,02 &                                               1,09 &       im Gültigkeitsbereich \\
+                    21&        0,04 &  0,01 &                                               0,45 &       im Gültigkeitsbereich \\
+                    22&        -0,01 &  0,01 &                                              -2,00 & nicht im Gültigkeitsbereich \\
+        \bottomrule
+    \end{tabular}
+    \caption{Überprüfung, welche Öltröpfchen im Gültigkeitsbereich liegen.}
+    \label{tab:Gültigkeitsbereich}
+\end{table}
+\clearpage
 
 \subsection{Bestimmung der Ladung und der Radien der Öltröpfchen}
+
+Aus \autoref{eqn:q} und \autoref{eqn:Radius} lassen sich nun die Ladungen und der Radius der Tröpfchen bestimmen.
+Die Dichte der Luft beträgt $\rho_{\symup{L}}=\SI{1,204}{\kg\per\meter^3}$ und die für Öl beträgt 
+$\rho_{\symup{Öl}}=\SI{886}{\kg\per\meter^3}$. Die Viskosität
+wird in \autoref{eqn:Radius} und \autoref{eqn:q} durch die Korrektur nach Cunningham in \autoref{eq:Theorie_Cunningham_Viskositaet}
+bestimmt. Die elektrische Feldstärke des Plattenkondensators lässt sich aus dem Zusammenhang
+$E=\frac{U}{d}$ mit $d=(7,6250 \pm 0,0051)\,\si{\milli\meter}$ bestimmen. Die korrigierte Ladung
+ergibt sich aus \autoref{eqn:q_korrigiert}. Die ermittelten Werte sind in \autoref{tab:rq}
+abgebildet.
+
+% \begin{table}
+%     \centering
+
+%     \caption{Radien, Ladungen und korrigierte Ladungen der Tröpfchen.}
+%     \label{tab:rq}
+% \end{table}
+
 
 \subsection{Bestimmung der Elementarladung}
 
