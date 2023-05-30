@@ -89,7 +89,7 @@ Differenz der Geschwindigkeiten $v_{\text{ab}} - v_{\text{auf}}$ bestimmt.
 
 Um sich auf einen Bereich einzuschränken, werden alle Werte, die die Relation 
 \begin{equation*}
-    0.5\leq \frac{2v_0}{\bar{v}_{\text{auf}}-\bar{v}_{\text{ab}}}\leq 1.5
+    0.75\leq \frac{2v_0}{\bar{v}_{\text{auf}}-\bar{v}_{\text{ab}}}\leq 1.25
 \end{equation*}
 erfüllen, als auswertbar angenommen. Die Ergebnisse zur Gültigkeit der Öltröpfchen ist in \autoref{tab:Gültigkeitsbereich} 
 zu finden.
@@ -116,11 +116,11 @@ zu finden.
                     14&        0,00 &  0,01 &                                               4,59 & nicht im Gültigkeitsbereich \\
                     15&        0,04 &  0,02 &                                               1,01 &       im Gültigkeitsbereich \\
                     16&        0,01 &  0,03 &                                               3,85 & nicht im Gültigkeitsbereich \\
-                    17&        0,05 &  0,02 &                                               0,74 &       im Gültigkeitsbereich \\
-                    18&        0,02 &  0,02 &                                               1,38 &       im Gültigkeitsbereich \\
+                    17&        0,05 &  0,02 &                                               0,74 & nicht im Gültigkeitsbereich \\
+                    18&        0,02 &  0,02 &                                               1,38 & nicht im Gültigkeitsbereich \\
                     19&        0,03 &  0,02 &                                               1,23 &       im Gültigkeitsbereich \\
                     20&        0,03 &  0,02 &                                               1,09 &       im Gültigkeitsbereich \\
-                    21&        0,04 &  0,01 &                                               0,45 &       im Gültigkeitsbereich \\
+                    21&        0,04 &  0,01 &                                               0,45 & nicht im Gültigkeitsbereich \\
                     22&        -0,01 &  0,01 &                                              -2,00 & nicht im Gültigkeitsbereich \\
         \bottomrule
     \end{tabular}
@@ -131,6 +131,8 @@ zu finden.
 
 \subsection{Bestimmung der Ladung und der Radien der Öltröpfchen}
 
+Der Radius und die Ladung der Teilchen wird einmal mit der Cunningham
+und einmal ohne Cunningham Korrektur durchgeführt.
 Aus \autoref{eqn:q} und \autoref{eqn:Radius} lassen sich nun die Ladungen und der Radius der Tröpfchen bestimmen.
 Die Dichte der Luft beträgt $\rho_{\symup{L}}=\SI{1,204}{\kg\per\meter^3}$ und die für Öl beträgt 
 $\rho_{\symup{Öl}}=\SI{886}{\kg\per\meter^3}$. Die Viskosität
@@ -140,17 +142,72 @@ $E=\frac{U}{d}$ mit $d=(7,6250 \pm 0,0051)\,\si{\milli\meter}$ bestimmen. Die ko
 ergibt sich aus \autoref{eqn:q_korrigiert}. Die ermittelten Werte sind in \autoref{tab:rq}
 abgebildet.
 
-% \begin{table}
-%     \centering
-
-%     \caption{Radien, Ladungen und korrigierte Ladungen der Tröpfchen.}
-%     \label{tab:rq}
-% \end{table}
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{c c c c}
+    \hline
+        Tröpchen & r in $10^-5$ m  & q in $10^{-19}$ C & $q_{korr}$ in $10^{-19}$ C \\ 
+    \hline
+        1 & 1,53 & 8,5683 & 8,5686 \\ 
+        2 & 1,37 & 4,6705 & 4,6706 \\ 
+        4 & 1,19 & 10,7862 & 10,7863 \\ 
+        5 & 1,53 & 7,2989 & 7,2992 \\ 
+        6 & 1,19 & 8,6035 & 8,6038 \\ 
+        8 & 0,97 & 7,6269 & 7,6270 \\ 
+        10 & 1,37 & 7,5187 & 7,5190 \\ 
+        11 & 1,53 & 10,816 & 10,8163 \\ 
+        12 & 0,97 & 5,2623 & 5,2621 \\ 
+        15 & 1,37 & 5,9531 & 5,9535 \\ 
+        19 & 1,19 & 7,5187 & 7,5189 \\ 
+        20 & 1,19 & 10,0977 & 10,0968 \\ 
+    \end{tabular}
+    \caption{Radien, Ladungen und korrigierte Ladungen der Tröpchen}
+    \label{tab:rq}
+\end{table}
 
 
 \subsection{Bestimmung der Elementarladung}
+Um die Elementarladung zu bestimmen, werden die berechneten Größen in Bereiche aufgeteilt, die in derselben Größenordnung liegen.
+Dann wird die Ladung in den einzelnen Gruppen gemittelt und schließlich ein Mittelwert der Differenzen zwischen zwei "benachbarten" 
+Gruppen berechnet.
+Für die unkorrigierte Ladung ergibt sich für die Bereiche:
+\begin{align*}
+    A&=[4.6705] \\
+    B&=[5.2953, 5,9531] \\
+    C&=[7.2989,7.6269,7.5178,7.5187] \\
+    D&=[8.5683,8.6035] \\
+    E&=[10.7862,10.8016,10.0977]
+\end{align*}
+wobei die Ladungen in $10^{-19}$ C angegeben sind.
+Durch Mittelwertbildung nach \ref{sec:} ergibt sich
+\begin{align*}
+    \bar{A}&= 4.6705\\
+    \bar{B}&= 5.62\pm 0.33 \\
+    \bar{C}&= 7.49 \pm 0.12 \\
+    \bar{D}&= 8.586 \pm 0.018 \\
+    \bar{E}&= 10.56 \pm 0.33 \\
+\end{align*}
+Nun werden die Differenzen (B-A),(C-B),(D-C),(E-D) gebildet und gemittelt.
+Für die Elementarladung$e_0$ ergibt sich schließlich
+\begin{equation*}
+    e_0= (1.4728 \pm 0.0821) 10^{-19} C .
+\end{equation*}
 
+Die Elementarladung für die mithilfe der Cunningham-Korrektur berechneten Ladungen berechnet sich vollständig analog zu 
+\begin{equation*}
+    e_{0k}=(1.4741 \pm 0.0829) 10^{-19}C .
+\end{equation*}
+Dabei wurden die korriegierten Wert für $q_{korr}$ aus Tabelle \ref{tab:} verwendet.
 \subsection{Bestimmung der Avogadrokonstante}
-
-
+Um die Avogadrokonstanten zu bestimmen wird Formel \ref{eq:} verwendet.
+Für $F$ wird dabei die Faradaykonstante
+\begin{equation*}
+    F= 96485.339 \frac{C}{mol}
+\end{equation*}
+verwendet.
+Mit $e_0$ und $e_{0k}$ ergibt sich für die Avogadrokonstanten
+\begin{align*}
+    N_A&= (6.551 \pm 0.365) \frac{1}{\text{mol}} \\
+    N_{Akorr}&= (6.543 \pm 0.368) \frac{1}{\text{mol}}.
+\end{align*}
 
